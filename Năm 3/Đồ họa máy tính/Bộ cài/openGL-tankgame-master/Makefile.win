@@ -1,0 +1,97 @@
+# Project: tam
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = AirPlane.o AutoBomb.o AutoTank.o AutoWarControl.o AutoWarObject.o Bomb.o BombAirPlane.o BombArray.o BombTank.o Camera.o CollisionBox.o CollisionBoxArray.o CollisionSquare.o ControlWarObject.o Explosion.o GLMetaseq.o main.o MqoObject.o Tank.o TankGame.o Terrain.o Texture.o Tray.o Tvector.o
+LINKOBJ  = AirPlane.o AutoBomb.o AutoTank.o AutoWarControl.o AutoWarObject.o Bomb.o BombAirPlane.o BombArray.o BombTank.o Camera.o CollisionBox.o CollisionBoxArray.o CollisionSquare.o ControlWarObject.o Explosion.o GLMetaseq.o main.o MqoObject.o Tank.o TankGame.o Terrain.o Texture.o Tray.o Tvector.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -lopengl32         -lfreeglut -lglu32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = tam.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+AirPlane.o: AirPlane.cpp
+	$(CPP) -c AirPlane.cpp -o AirPlane.o $(CXXFLAGS)
+
+AutoBomb.o: AutoBomb.cpp
+	$(CPP) -c AutoBomb.cpp -o AutoBomb.o $(CXXFLAGS)
+
+AutoTank.o: AutoTank.cpp
+	$(CPP) -c AutoTank.cpp -o AutoTank.o $(CXXFLAGS)
+
+AutoWarControl.o: AutoWarControl.cpp
+	$(CPP) -c AutoWarControl.cpp -o AutoWarControl.o $(CXXFLAGS)
+
+AutoWarObject.o: AutoWarObject.cpp
+	$(CPP) -c AutoWarObject.cpp -o AutoWarObject.o $(CXXFLAGS)
+
+Bomb.o: Bomb.cpp
+	$(CPP) -c Bomb.cpp -o Bomb.o $(CXXFLAGS)
+
+BombAirPlane.o: BombAirPlane.cpp
+	$(CPP) -c BombAirPlane.cpp -o BombAirPlane.o $(CXXFLAGS)
+
+BombArray.o: BombArray.cpp
+	$(CPP) -c BombArray.cpp -o BombArray.o $(CXXFLAGS)
+
+BombTank.o: BombTank.cpp
+	$(CPP) -c BombTank.cpp -o BombTank.o $(CXXFLAGS)
+
+Camera.o: Camera.cpp
+	$(CPP) -c Camera.cpp -o Camera.o $(CXXFLAGS)
+
+CollisionBox.o: CollisionBox.cpp
+	$(CPP) -c CollisionBox.cpp -o CollisionBox.o $(CXXFLAGS)
+
+CollisionBoxArray.o: CollisionBoxArray.cpp
+	$(CPP) -c CollisionBoxArray.cpp -o CollisionBoxArray.o $(CXXFLAGS)
+
+CollisionSquare.o: CollisionSquare.cpp
+	$(CPP) -c CollisionSquare.cpp -o CollisionSquare.o $(CXXFLAGS)
+
+ControlWarObject.o: ControlWarObject.cpp
+	$(CPP) -c ControlWarObject.cpp -o ControlWarObject.o $(CXXFLAGS)
+
+Explosion.o: Explosion.cpp
+	$(CPP) -c Explosion.cpp -o Explosion.o $(CXXFLAGS)
+
+GLMetaseq.o: GLMetaseq.c
+	$(CPP) -c GLMetaseq.c -o GLMetaseq.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+MqoObject.o: MqoObject.cpp
+	$(CPP) -c MqoObject.cpp -o MqoObject.o $(CXXFLAGS)
+
+Tank.o: Tank.cpp
+	$(CPP) -c Tank.cpp -o Tank.o $(CXXFLAGS)
+
+TankGame.o: TankGame.cpp
+	$(CPP) -c TankGame.cpp -o TankGame.o $(CXXFLAGS)
+
+Terrain.o: Terrain.cpp
+	$(CPP) -c Terrain.cpp -o Terrain.o $(CXXFLAGS)
+
+Texture.o: Texture.cpp
+	$(CPP) -c Texture.cpp -o Texture.o $(CXXFLAGS)
+
+Tray.o: Tray.cpp
+	$(CPP) -c Tray.cpp -o Tray.o $(CXXFLAGS)
+
+Tvector.o: Tvector.cpp
+	$(CPP) -c Tvector.cpp -o Tvector.o $(CXXFLAGS)

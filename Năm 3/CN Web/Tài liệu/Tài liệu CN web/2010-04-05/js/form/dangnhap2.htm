@@ -1,0 +1,22 @@
+﻿<form name=dn method=post action="xuly.htm" 
+onsubmit="return kiemtra()">
+Tên đăng nhập <input type=text name=txtTen> <span id=loiTen style="color:red"> </span> <br>
+Mật khẩu <input type=password name=txtMk> <span id=loiMk style="color:red"> </span><br>
+<input type=submit value="Đăng nhập">
+</form>
+
+<script>
+function kiemtra() {
+	b = true;
+
+	s = dn.txtTen.value;
+	if( s.length == 0) { loiTen.innerText = "Có lỗi tên"; b = false; }
+	else { loiTen.innerText = ""; }
+	
+	s = dn.txtMk.value;
+	if( s.length == 0) { loiMk.innerText = "Có lỗi mật khẩu"; b = false; }
+	else { loiMk.innerText = ""; }
+	
+	return b;
+}
+</script>	

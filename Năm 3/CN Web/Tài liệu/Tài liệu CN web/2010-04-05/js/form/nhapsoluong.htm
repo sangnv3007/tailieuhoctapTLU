@@ -1,0 +1,25 @@
+﻿<form name=soluong method=post action="xuly.htm" 
+onsubmit="return kiemtra()">
+
+Số lượng bán <input type=text name=txtBan> <br>
+Số lượng còn <input type=text name=txtCon> <br>
+<input type=submit value="Kiểm tra">
+</form>
+
+<script>
+function kiemtra() {
+	re = /^[0-9]+$/;
+
+	s = soluong.txtBan.value;
+	if( re.test(s) == false) {
+		alert('Số lượng bán sai'); return false;
+	}
+
+	s = soluong.txtCon.value;
+	if( re.test(s) == false) {
+		alert('Số lượng còn sai'); return false;
+	}
+	
+	return true;
+}
+</script>	

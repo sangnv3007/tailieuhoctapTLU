@@ -1,0 +1,42 @@
+/*
+Theme Name: Flatsome
+Theme URI: http://flatsome.uxthemes.com/
+Author: UX-Themes
+Author URI: http://www.uxthemes.com/
+Description: Multi-Purpose Responsive WooCommerce Theme
+Version: 3.3.4
+Text Domain: flatsome
+License:
+License URI:
+*/
+
+/***************
+All custom CSS should be added to Flatsome > Advanced > Custom CSS,
+or in the style.css of a Child Theme.
+***************/
+.button, input[type='submit'], input[type='submit'].button, input[type='reset'].button, input[type='button'].button {
+    color: #fff;
+    background-color: #446084;
+    background-color: brown;
+    border-color: rgba(0,0,0,0.05);
+}
+.box-text p {
+    margin-top: .1em;
+    margin-bottom: .1em;
+    color: brown;
+}
+.widgets-boxed .widget h3 {
+    background-color: brown;
+    margin-left: -21px;
+    margin-top: -16px;
+    padding: 10px 20px 10px;
+    width: calc(100% + 42px);
+    color: #FFF;
+}
+h3.widget-title {
+    font-size: 1em;
+    background: brown;
+    color: #fff;
+    padding: 10px;
+    /* margin: 10px; */
+}

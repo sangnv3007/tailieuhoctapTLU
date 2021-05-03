@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="GoTV_TLU/GoTV_TLU.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GoTV_TLU/Program.cs">
+    <Files>
+      <File FileName="GoTV_TLU/Program.cs" Line="51" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,30 @@
+﻿<form name=dn method=post action="xuly.htm" 
+onsubmit="return kiemtra()">
+Tên đăng nhập <input type=text name=txtTen 
+onfocus="this.style.backgroundColor='red';"
+onblur="this.style.backgroundColor='';"> <br>
+Mật khẩu <input type=password name=txtMk
+onfocus="this.style.backgroundColor='red';"
+onblur="this.style.backgroundColor='';"> <br>
+<input type=submit value="Đăng nhập">
+</form>
+
+<script>
+function kiemtra() {
+	s = dn.txtTen.value;
+	if( s.length == 0) {
+		alert('Tên rỗng'); 
+		dn.txtTen.focus();
+		return false;
+	}
+
+	s = dn.txtMk.value;
+	if( s.length == 0) {
+		alert('Mật khẩu rỗng'); 
+		dn.txtMk.focus();
+		return false;
+	}
+	
+	return true;
+}
+</script>	

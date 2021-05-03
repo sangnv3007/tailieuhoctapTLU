@@ -1,0 +1,69 @@
+﻿<table border=1> <tr>
+<td onmouseover="hien(this, canhac)" onmouseout="xoaduoc=true;"> Ca nhạc </td>
+<td onmouseover="hien(this, dienanh)" onmouseout="xoaduoc=true;"> Điện ảnh </td>
+<td onmouseover="hien(this, thethao)" onmouseout="xoaduoc=true;"> Thể thao </td>
+<td onmouseover="hien(this, vanhoc)" onmouseout="xoaduoc=true;"> Văn học </td>
+</tr></table>
+
+<script language=javascript>
+xoaduoc = false;
+tdcha = null;
+tdcon = null;
+
+function hien(cha, con) {
+	xoaduoc = false;
+
+	if(tdcon != null) tdcon.style.visibility = 'hidden';
+	if(tdcha != null) tdcha.style.backgroundColor = '';
+
+	tdcha = cha;
+	tdcon = con;
+
+	tdcon.style.visibility = 'visible';
+	tdcha.style.backgroundColor = 'red';
+} 
+
+function xoa() {
+	if(xoaduoc == false) return;
+	if(tdcon != null) tdcon.style.visibility = 'hidden';
+	if(tdcha != null) tdcha.style.backgroundColor = '';
+}
+
+setInterval("xoa()", 800);
+
+</script>
+
+<div id=canhac style="position:absolute; left:47px; top:26px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+<table border=1> 
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Ca nhạc quốc tế </td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Ca nhạc dân tộc </td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Nhạc nhẹ việt nam</td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Nhạc Trịnh </td> </tr>
+</table>
+</div>
+
+<div id=dienanh style="position:absolute; left:113px; top:28px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+<table border=1> 
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Giải oscar </td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Hollywood </td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Hồng kông </td> </tr>
+<tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Hàn quốc </td> </tr>
+</table>
+</div>
+
+<div id=thethao style="position:absolute; left:185px; top:25px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+ <table border=1>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Bóng đá</td> </tr>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Cờ vua</td> </tr>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Bơi lội</td> </tr>
+  </table>
+</div>
+
+<div id=vanhoc style="position:absolute; left:273px; top:24px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+  <table border=1>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Nước ngoài</td> </tr>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Trong nước</td> </tr>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Tiểu thuyết lãng mạn</td> </tr>
+    <tr> <td onmouseover="xoaduoc=false" onmouseout="xoaduoc=true"> Truyện ngắn</td> </tr>
+  </table>
+</div>

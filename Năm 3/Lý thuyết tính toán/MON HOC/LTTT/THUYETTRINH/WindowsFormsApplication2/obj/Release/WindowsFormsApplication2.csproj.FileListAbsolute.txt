@@ -1,0 +1,28 @@
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe.config
+C:\Users\dat\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\dat\documents\visual studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.pdb
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form1.resources
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.exe
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.pdb
+C:\Users\dat\Documents\Visual Studio 2012\Projects\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe.config
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.exe
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.pdb
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.pdb
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form1.resources
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Properties.Resources.resources
+T:\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe.config
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.pdb
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csprojAssemblyReference.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Form1.resources
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.Properties.Resources.resources
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.GenerateResource.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.csproj.CoreCompileInputs.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.exe
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\WindowsFormsApplication2\obj\Release\WindowsFormsApplication2.pdb

@@ -1,0 +1,39 @@
+﻿<form name=nhapngay method=get action="xuly.htm" 
+onsubmit="return kiemtra()">
+
+Ngày <input type=text name=txtNgay> 
+tháng <input type=text name=txtThang>
+năm <input type=text name=txtNam>
+
+<input type=submit value="Gửi">
+</form>
+
+<script>
+
+function ktngay(d, m, y) {
+	if( d>=1 && d<=29 && m==2 && (y%4) == 0) return true;
+	if( d>=1 && d<=28 && m==2 && (y%4) != 0) return true;
+	if( d>=1 && d<=30 && (m==4||m==6||m==9||m==11)  ) return true;
+	if( d>=1 && d<=31 && (m==1||m==3||m==5||m==7||m==8||m==10||m==12)  ) return true;
+
+	return false;
+}
+
+
+function kiemtra() {
+	re = /^[0-9]+$/;
+
+	d = nhapngay.txtNgay.value;
+	if( re.test(d) == false) { alert('Ngày sai'); nhapngay.txtNgay.focus(); return false; }
+
+	m = nhapngay.txtThang.value;
+	if( re.test(m) == false) { alert('Tháng sai'); nhapngay.txtThang.focus(); return false; }
+
+	y = nhapngay.txtNam.value;
+	if( re.test(y) == false) { alert('Năm sai'); nhapngay.txtNam.focus(); return false; }
+
+	if( ktngay(parseInt(d), parseInt(m), parseInt(y) ) == false ) { alert('Ngày không hợp lệ'); return false; }
+	
+	return true;
+}
+</script>	

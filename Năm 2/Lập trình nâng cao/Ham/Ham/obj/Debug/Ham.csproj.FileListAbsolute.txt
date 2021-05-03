@@ -1,0 +1,7 @@
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\obj\Debug\Ham.csprojAssemblyReference.cache
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\obj\Debug\Ham.csproj.CoreCompileInputs.cache
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\bin\Debug\Ham.exe.config
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\bin\Debug\Ham.exe
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\bin\Debug\Ham.pdb
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\obj\Debug\Ham.exe
+D:\Học Tập\Lập trình nâng cao\Ham\Ham\obj\Debug\Ham.pdb

@@ -1,0 +1,20 @@
+﻿<h2 onclick="anhien(quanao)">Quần áo</h2>
+<div id=quanao>
+<p>Quần áo mùa đông</p>
+<p>Quần áo trẻ em</p>
+<p>Quần áo mùa hè</p>
+</div>
+
+<h2 onclick="anhien(sach)">Sách</h2>
+<div id=sach>
+<p>Sách khoa học</p>
+<p>Truyện thiếu nhi</p>
+<p>Tiểu thuyết</p>
+</div>
+
+<script>
+function anhien(x) {
+	if(x.style.display == 'none')  x.style.display = '';
+	else x.style.display = 'none';
+}
+</script>

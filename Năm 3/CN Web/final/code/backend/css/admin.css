@@ -1,0 +1,6 @@
+﻿.row-edit{float:left;width:100%;margin-bottom:5px;}
+.row-edit label{float:left;width:110px;font-weight:bold;}
+.row-edit input{float:left;border:1px solid #666;}
+.row-edit select{float:left;border:1px solid #666;}
+.row-edit textarea{float:left;}
+.row-edit button.save{margin-left:110px;}

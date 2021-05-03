@@ -1,0 +1,159 @@
+#include <GL/gl.h>
+#include <GL/glut.h>
+//Thuat toan MidPoint voi he so goc 0<k<1
+//void MidPoint(int x1, int y1, int x2, int y2)
+//{
+//	int dx,dy,x,y,d,incrE,incrNE;
+//	dx=x2-x1;dy=y2-y1;
+//	x=x1; y=y1; d=2*dy -dx;
+//	incrE=2*dy;
+//	incrNE=2*(dy-dx);
+//	while(x<=x2)
+//	{	
+//		
+//		int i=-5;
+//		while(i<5)
+//		{
+//			glVertex2i(x,y+i);
+//			i++;
+//		}	
+//		if(d<=0) d=d+incrE;
+//		else{
+//			d=d+incrNE;
+//			y++;
+//		}
+//		x++;
+//	}
+//}
+//a> Thuat toan Bresenham voi he so goc 0<k<1
+void Bresenham1 (x1,y1,x2,y2){
+	int x, y, dx, dy; float d;
+	dx=x2-x1; dy=y2-y1; d=dx-2*dy;
+	x=x1; y=y1;
+	while (x<=x2) {
+		glVertex2i(x,y);
+		if (d>0) d=d-2*dy;
+		else {d=d +2*dx-2*dy; y=y+1;}
+		x=x+1;
+	}
+}
+//a> Thuat toan Bresenham voi he so goc 0<k<1 voi do day la 10
+void Bresenham2 (x1,y1,x2,y2){
+	int x, y, dx, dy; float d;
+	dx=x2-x1; dy=y2-y1; d=dx-2*dy;
+	x=x1; y=y1;
+	while (x<=x2) {
+		int i=-5;
+		while(i<5)
+		{
+			glVertex2i(x,y+i);
+		}
+		if (d>0) d=d-2*dy;
+		else {d=d +2*dx-2*dy; y=y+1;}
+		x=x+1;
+	}
+}
+//Thuat toan Bresenham voi he so goc 1<k<vocung
+//void Bresenham2 (x1,y1,x2,y2){
+//	int x, y, dx, dy; float d;
+//	dx=x2-x1; dy=y2-y1; d=2*dx+dy;
+//	x=x1; y=y1;
+//	while (x<=x2) {
+//		glVertex2i(x,y);
+//		if (d>0) d=d+2*dx-2*dy;
+//		else {d=d +2*dx; y=y+1;}
+//		x=x+1;
+//	}
+//}
+//Thuat toan Bresenham voi he so goc bat ki
+void Bresenham(int x1,int y1,int x2, int y2)
+{
+	int x,y,dx,dy,D;
+	dx=abs(x2-x1); dy=abs(y2-y1);
+	D=2*dy-dx;
+	x=x1;
+	y=y1;
+	int x_unit=1,y_unit=1;
+	//xét truong hop de cho y_unit và x_unit de ve tang lên hay giam xuong
+    if (x2 - x1 < 0)
+        x_unit = -x_unit;
+    if (y2 - y1 < 0)
+        y_unit = -y_unit;
+    if (x1 == x2)   // tru?ng h?p v? du?ng th?ng d?ng
+    {
+        while (y != y2+1)
+        {
+            y += y_unit;
+            glVertex2i(x,y);
+        }
+    }
+ 
+    else if (y1 == y2)  // tru?ng h?p v? du?ng ngang
+    {
+        while (x != x2+1)
+        {
+            x += x_unit;
+            glVertex2i(x,y);
+        }
+    }
+    else{          
+        glVertex2i(x,y);
+        while(x != x2){
+            if (D<0) D += 2*dy;
+            else{
+                D += 2*(dy-dx);
+                y += y_unit;
+            }
+            x += x_unit;
+            glVertex2i(x,y);
+        }
+    }
+}
+
+
+
+void display(void){
+	glClear (GL_COLOR_BUFFER_BIT);
+	glColor3f (1.0, 1.0, 1.0);
+	glBegin(GL_POINTS);
+		Bresenham1(0,0,100,80);
+		//Bresenham1.2(0,77,150,80);
+		//Bresenham(200,200,50,60);
+	glEnd();
+	glBegin(GL_POINTS);
+		Bresenham(0,80,100,80);
+	glEnd();
+	glFlush ();
+//	glBegin(GL_POLYGON);
+//		glVertex3f (0.25, 0.25, 0.0);//vo
+//		glVertex3f (0.75, 0.25, 0.0);//v1
+//		glVertex3f (0.75, 0.75, 0.0);//v2
+////		glVertex3f (0.5, 1.0, 0.0);// Thêm 1 diem
+//		glVertex3f (0.25, 0.75, 0.0);//v3
+//		
+//	glEnd();
+//	//VE TAM GIÁC MÀU ÐO
+//	glColor3f (1.0, 0.0, 0.0);
+//	glBegin(GL_TRIANGLES);
+//		glVertex3f (0.75, 0.75, 0.0);//v2
+//		glVertex3f (0.5, 1.0, 0.0);
+//		glVertex3f (0.25, 0.75, 0.0);//v3
+//	glEnd();
+//	glFlush ();//dam bao các lenh ve hoàn thien trong thoi gian có han.
+
+}
+void init (void){
+glClearColor (0.0, 0.0, 0.0, 0.0);
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(-200.0, 200.0, -200.0, 200.0, -1.0, 1.0);}
+int main(int argc, char** argv){
+glutInit(&argc, argv);// Khoi tao Glut và xu ly moi dòng lenh doi so, glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);// su dung mô hình RGBA
+glutInitWindowSize (250, 250);// kích co c?ua so
+glutInitWindowPosition (100, 100);// chi ra vi trí màn hình góc trên bên trái
+glutCreateWindow ("Hello Word !!!"); // Tao tiêu de cua so “hello”
+init ();
+glutDisplayFunc(display);
+glutMainLoop();
+return 0; 
+}

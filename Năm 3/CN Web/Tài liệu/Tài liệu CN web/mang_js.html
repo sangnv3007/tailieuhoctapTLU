@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Input and sort array</title>
+    <script type="text/javascript">
+        function fun_input(){
+          var sl;
+          sl=prompt("Nhap vao so luong mang:");
+          var myarr=new Array(sl);
+          for(i=0;i<sl;i++){
+            myarr[i]=prompt("Nhap phan tu thu:"+i);
+          }
+          document.getElementById("in").innerHTML=myarr;
+          document.getElementById("sortgt").innerHTML=myarr.sort();
+        }
+    </script>
+    <style media="screen">
+    fieldset {
+      width:  100px;
+      margin-top:  100px;
+      margin-left:  100px;
+      background: #f3cdf1;
+    }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <form class="arrayy" action="index.html" method="post">
+        <input type="button" name="sl" onclick="fun_input()" value="Input array">
+        <br>
+         Hien thi: <p id="in"></p>
+         <p id="sortgt"></p>
+      </form>
+    </fieldset>
+  </body>
+</html>

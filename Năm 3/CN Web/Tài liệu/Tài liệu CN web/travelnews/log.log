@@ -1,0 +1,53 @@
+25.10.2010 09:14:59 sql=[select id,title,intro from news 
+	order by created desc limit 10] 
+25.10.2010 09:17:24 sql=[select * from news where (catid in(7,9)) order by created desc limit 1] 
+25.10.2010 09:17:25 sql=[select * from news where (catid=7) order by created desc limit 10] 
+25.10.2010 09:25:45 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:26:47 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:28:59 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:29:41 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:30:10 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:31:18 sql=[select id,title,intro,img from news 
+	order by created desc limit 1] 
+25.10.2010 09:33:21 sql=[select id,title,intro,img,url from news 
+	order by created desc limit 1] 
+25.10.2010 09:42:18 sql=[select id,title,intro,img,url 
+	from news 
+	order by created desc limit 1] 
+25.10.2010 09:42:18 sql=[select id,title,intro,img,url 
+	from news 
+	where catid=7
+	order by created desc limit 10] 
+25.10.2010 09:43:59 sql=[select id,title,intro,img,url 
+	from news 
+	order by created desc limit 1] 
+25.10.2010 09:43:59 sql=[select id,title,intro,img,url 
+	from news 
+	where catid=7
+	order by created desc limit 10] 
+25.10.2010 09:44:30 sql=[select id,title,intro,img,url 
+	from news 
+	order by created desc limit 1] 
+25.10.2010 09:44:30 sql=[select id,title,intro,img,url 
+	from news 
+	where catid=7
+	order by created desc limit 10] 
+25.10.2010 09:46:15 sql=[select id,title,intro,img,url 
+	from news 
+	order by created desc limit 1] 
+25.10.2010 09:46:15 sql=[select id,title,intro,img,url 
+	from news 
+	where catid=7
+	order by created desc limit 10] 
+25.10.2010 09:48:06 sql=[select id,title,intro,img,url 
+	from news 
+	order by created desc limit 1] 
+25.10.2010 09:48:06 sql=[select id,title,intro,img,url 
+	from news 
+	where catid=7
+	order by created desc limit 10] 

@@ -1,0 +1,13 @@
+<img src="hinh1.jpg" id=hinhAnh width="320" height="200">
+
+<script>
+x = 0;
+c = Array("hinh1.jpg", "hinh2.jpg", "hinh3.jpg", "hinh4.jpg");
+
+function thaydoi() {
+	hinhAnh.src = c[x % c.length];
+	x++;
+}
+
+setInterval("thaydoi()", 1000);
+</script>

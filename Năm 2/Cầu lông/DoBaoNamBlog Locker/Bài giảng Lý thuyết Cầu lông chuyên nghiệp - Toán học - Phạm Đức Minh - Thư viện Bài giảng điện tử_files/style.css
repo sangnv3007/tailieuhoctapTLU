@@ -1,0 +1,78 @@
+#backgroundPopup { 
+	z-index: 10000000;
+	position: fixed;
+	display: none;
+	height: 600%;
+	width: 100%;
+	background: #999999;
+	top: 0px;  
+	left: 0px;
+}
+#toPopup {
+    	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    	background: none repeat scroll 0 0 #FFFFFF;
+    	border: 10px solid #666;
+    	border-radius: 3px 3px 3px 3px;
+    	color: #666666;
+    	display: none;
+    	font-size: 14px;
+   		left: 50%;
+    	margin-left: -210px;
+    	position: fixed;
+   		top: 180px;
+    	width: 400px;
+    	z-index: 10000001;
+}
+div.loader {
+	background: url("../img/loading.gif") no-repeat scroll 0 0 transparent;
+	height: 32px;
+	width: 32px;
+	display: none;
+	z-index: 9999;
+	top: 40%;
+	left: 50%;
+	position: fixed;
+	margin-left: -10px;
+}
+div.close {
+    background: url("../img/closebox.png") no-repeat scroll 0 0 transparent;
+    bottom: 292px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 392px;
+    position: absolute;
+    width: 30px;
+}
+span.ecs_tooltip {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 11px;
+    height: 16px;
+    opacity: 0.7;
+    padding: 4px 3px 2px 5px;
+    position: fixed;
+    right: -62px;
+    text-align: center;
+    top: -51px;
+    width: 93px;
+}
+/*span.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}*/
+div#popup_content {
+    margin: 0px 0px;
+	/*overflow-y:scroll;
+	height:300px
+	*/
+}

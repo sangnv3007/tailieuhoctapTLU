@@ -1,0 +1,9 @@
+c:\users\dat\documents\visual studio 2012\Projects\VD2\bin\Debug\VD2.exe.config
+c:\users\dat\documents\visual studio 2012\Projects\VD2\bin\Debug\VD2.exe
+c:\users\dat\documents\visual studio 2012\Projects\VD2\bin\Debug\VD2.pdb
+c:\users\dat\documents\visual studio 2012\Projects\VD2\obj\Debug\VD2.Form1.resources
+c:\users\dat\documents\visual studio 2012\Projects\VD2\obj\Debug\VD2.Properties.Resources.resources
+c:\users\dat\documents\visual studio 2012\Projects\VD2\obj\Debug\VD2.csproj.GenerateResource.Cache
+c:\users\dat\documents\visual studio 2012\Projects\VD2\obj\Debug\VD2.exe
+c:\users\dat\documents\visual studio 2012\Projects\VD2\obj\Debug\VD2.pdb
+C:\Users\dat\Documents\Visual Studio 2012\Projects\VD2\obj\Debug\VD2.csprojResolveAssemblyReference.cache

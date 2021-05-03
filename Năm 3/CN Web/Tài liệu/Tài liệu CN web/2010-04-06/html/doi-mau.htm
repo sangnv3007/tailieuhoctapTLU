@@ -1,0 +1,13 @@
+﻿<h1 id=doanvan>Đoạn văn đổi màu</h1>
+
+<script>
+x = 0;
+c = Array("red", "green", "blue", "yellow", "cyan", "magenta");
+
+function thaydoi() {
+	doanvan.style.color = c[x % c.length];
+	x++;
+}
+
+setInterval("thaydoi()", 500);
+</script>

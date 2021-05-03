@@ -1,0 +1,31 @@
+<body>
+
+<div id=tuyet style="position:absolute; left:50px; top:0px; width:20px; height:20px;">
+<img src="hinh1.jpg" width=320 height=200>
+</div>
+
+<div id=tuyet1 style="position:absolute; left:300px; top:70px; width:20px; height:20px;">
+<img src="hinh1.jpg" width=320 height=200>
+</div>
+
+<script>
+
+function thaydoi() {
+	cao = document.body.clientHeight;
+	y = parseInt( tuyet.style.top );
+	tuyet.style.top = (y + 10) % cao;
+}
+
+function thaydoi1() {
+	cao = document.body.clientHeight;
+	y = parseInt( tuyet1.style.top );
+	tuyet1.style.top = (y + 10) % cao;
+}
+
+setInterval("thaydoi()", 100);
+setInterval("thaydoi1()", 200);
+</script>
+
+
+</body>
+

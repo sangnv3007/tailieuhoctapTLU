@@ -1,0 +1,28 @@
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\bin\Release\VD2.exe.config
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\bin\Release\VD2.exe
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\bin\Release\VD2.pdb
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.Form1.resources
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.Properties.Resources.resources
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.csproj.GenerateResource.Cache
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.exe
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.pdb
+C:\Users\dat\documents\visual studio 2012\Projects\VD2\obj\Release\VD2.csprojResolveAssemblyReference.cache
+T:\LTTT\THUYETTRINH\VD2\bin\Release\VD2.exe.config
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.exe
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.pdb
+T:\LTTT\THUYETTRINH\VD2\bin\Release\VD2.exe
+T:\LTTT\THUYETTRINH\VD2\bin\Release\VD2.pdb
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.csprojResolveAssemblyReference.cache
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.Form1.resources
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.Properties.Resources.resources
+T:\LTTT\THUYETTRINH\VD2\obj\Release\VD2.csproj.GenerateResource.Cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\bin\Release\VD2.exe.config
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\bin\Release\VD2.exe
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\bin\Release\VD2.pdb
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.csprojAssemblyReference.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.Form1.resources
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.Properties.Resources.resources
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.csproj.GenerateResource.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.csproj.CoreCompileInputs.cache
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.exe
+D:\Học Tập\Năm 3\Lý thuyết tính toán\MON HOC\LTTT\THUYETTRINH\VD2\obj\Release\VD2.pdb

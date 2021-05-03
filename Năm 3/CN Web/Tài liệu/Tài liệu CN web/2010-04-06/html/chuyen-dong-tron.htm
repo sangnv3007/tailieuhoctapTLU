@@ -1,0 +1,24 @@
+<body>
+
+<div id=hinh style="position:absolute; width:20px; height:20px; background-color:blue">
+</div>
+
+<script>
+r = 200;
+t = 0;
+
+function thaydoi() {
+	x0 = document.body.clientWidth / 2;
+	y0 = document.body.clientHeight / 2;
+
+	hinh.style.left = x0 + r * Math.cos(t/10);
+	hinh.style.top = y0 + r * Math.sin(t/10);
+	t++;
+}
+
+setInterval("thaydoi()", 100);
+</script>
+
+
+</body>
+

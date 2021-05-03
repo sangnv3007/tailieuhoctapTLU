@@ -1,0 +1,54 @@
+﻿<table border=1> <tr>
+<td onmouseover="hien(this, canhac)" onmouseout="xoa(this, canhac)"> Ca nhạc </td>
+<td onmouseover="hien(this, dienanh)" onmouseout="xoa(this, dienanh)"> Điện ảnh </td>
+<td onmouseover="hien(this, thethao)" onmouseout="xoa(this, thethao)"> Thể thao </td>
+<td onmouseover="hien(this, vanhoc)" onmouseout="xoa(this, vanhoc)"> Văn học </td>
+</tr></table>
+
+<script language=javascript>
+function hien(cha, con) {
+	cha.style.backgroundColor = 'red';
+	con.style.visibility = 'visible';
+}
+
+function xoa(cha, con) {
+	cha.style.backgroundColor = '';
+	con.style.visibility = 'hidden';
+}
+
+</script>
+
+<div id=canhac style="position:absolute; left:47px; top:26px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+<table border=1> 
+<tr> <td> Ca nhạc quốc tế </td> </tr>
+<tr> <td> Ca nhạc dân tộc </td> </tr>
+<tr> <td> Nhạc nhẹ việt nam</td> </tr>
+<tr> <td> Nhạc Trịnh </td> </tr>
+</table>
+</div>
+
+<div id=dienanh style="position:absolute; left:113px; top:28px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+<table border=1> 
+<tr> <td> Giải oscar </td> </tr>
+<tr> <td> Hollywood </td> </tr>
+<tr> <td> Hồng kông </td> </tr>
+<tr> <td> Hàn quốc </td> </tr>
+</table>
+</div>
+
+<div id=thethao style="position:absolute; left:185px; top:25px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+ <table border=1>
+    <tr> <td> Bóng đá</td> </tr>
+    <tr> <td> Cờ vua</td> </tr>
+    <tr> <td> Bơi lội</td> </tr>
+  </table>
+</div>
+
+<div id=vanhoc style="position:absolute; left:273px; top:24px; visibility: hidden; background-color: #FFFFCC; layer-background-color: #FFFFCC;"> 
+  <table border=1>
+    <tr> <td> Nước ngoài</td> </tr>
+    <tr> <td> Trong nước</td> </tr>
+    <tr> <td> Tiểu thuyết lãng mạn</td> </tr>
+    <tr> <td> Truyện ngắn</td> </tr>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<script>
+
+function thaydoi() {
+	d = new Date();
+	s = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+	window.status = s;
+	document.title = s;
+}
+
+setInterval("thaydoi()", 500);
+</script>

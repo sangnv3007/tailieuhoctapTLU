@@ -1,0 +1,10 @@
+From 301-C5 C5 to Everyone:  03:45 PM
+Bài tập tuần 2
+1.	Thử hết các components Ui cơ bản của Android
+https://www.tutorialspoint.com/android/android_user_interface_controls.htm
+
+2.	Tạo một custom listview mới, listview - country
+https://csc.edu.vn/lap-trinh-di-dong/tin-tuc/kham-pha-lap-trinh-di-dong/hoc-lap-trinh-android-tao-listview-bang-arrayadapter-923
+
+3.	Tạo một ứng dụng mediaplayer
+https://www.tutorialspoint.com/android/android_mediaplayer.htm

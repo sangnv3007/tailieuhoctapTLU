@@ -1,0 +1,110 @@
+jQuery(function(jQuery) {
+	function createCookie(name, value, days){
+		if (days){
+			var date = new Date();
+			var hours = 1;
+			date.setTime(date.getTime() + (days * 60 * 60 * 1000 * hours));
+			var expires = "; expires=" + date.toGMTString();
+		}
+		else var expires = "";
+		document.cookie = name + "=" + value + expires + "; path=/";
+	}
+	function readCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(";");
+		for (var i = 0; i < ca.length; i++){
+			var c = ca[i];
+			while (c.charAt(0) == " ") c = c.substring(1, c.length);
+			if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+		}
+		return null;
+	}
+	
+	function addEvent(obj, eventName, func){
+		if (obj.attachEvent){
+			obj.attachEvent("on" + eventName, func);
+		}
+		else if(obj.addEventListener){
+			obj.addEventListener(eventName, func, true);
+		}
+		else{
+			obj["on" + eventName] = func;
+		}
+	}		
+	
+	jQuery.noConflict();
+	var cookie_value= readCookie("key");
+	if(!cookie_value){
+		createCookie("key", "active", 1);
+		loading(); // loading
+		setTimeout(function(){ // then show popup, deley in .5 second
+		loadPopup(); // function show popup 
+		}, 500);
+	}
+	
+	jQuery("a.topopup").click(function() {
+			loading(); // loading
+			setTimeout(function(){ // then show popup, deley in .5 second
+				loadPopup(); // function show popup 
+			}, 500); // .5 second
+	return false;
+	});
+	
+	/* event for close the popup */
+	jQuery("div.close").hover(
+					function() {
+						jQuery('span.ecs_tooltip').show();
+					},
+					function () {
+    					jQuery('span.ecs_tooltip').hide();
+  					}
+				);
+	
+	jQuery("div.close").click(function() {
+		disablePopup();  // function close pop up
+	});
+	
+	jQuery(this).keyup(function(event) {
+		if (event.which == 27) { // 27 is 'Ecs' in the keyboard
+			disablePopup();  // function close pop up
+		}  	
+	});
+	
+	jQuery("div#backgroundPopup").click(function() {
+		disablePopup();  // function close pop up
+	});
+	
+	jQuery('a.livebox').click(function() {
+		alert('Xin chào quý vị!');
+	return false;
+	});
+	
+
+	 /************** start: functions. **************/
+	function loading() {
+		jQuery("div.loader").show();  
+	}
+	function closeloading() {
+		jQuery("div.loader").fadeOut('normal');  
+	}
+	
+	var popupStatus = 0; // set value
+	
+	function loadPopup() { 
+		if(popupStatus == 0) { // if value is 0, show popup
+			closeloading(); // fadeout loading
+			jQuery("#toPopup").fadeIn(0500); // fadein popup div
+			jQuery("#backgroundPopup").css("opacity", "0.7"); // css opacity, supports IE7, IE8
+			jQuery("#backgroundPopup").fadeIn(0001); 
+			popupStatus = 1; // and set value to 1
+		}	
+	}
+		
+	function disablePopup() {
+		if(popupStatus == 1) { // if value is 1, close popup
+			jQuery("#toPopup").fadeOut("normal");  
+			jQuery("#backgroundPopup").fadeOut("normal");  
+			popupStatus = 0;  // and set value to 0
+		}
+	}
+});

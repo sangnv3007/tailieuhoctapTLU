@@ -1,0 +1,9 @@
+Du lieu co nhung gi?
+	+ Chuyen muc -> grab_category
+	+ Bai viet -> grab_content
+	+ user ->grab_user
+1. Lay thong tin tu dau?
+	-> grab_content
+	-> lay may ban ghi -> 1
+	select one
+	

@@ -1,0 +1,2 @@
+string="sdhdfaehfuh"
+string.capitazie()
