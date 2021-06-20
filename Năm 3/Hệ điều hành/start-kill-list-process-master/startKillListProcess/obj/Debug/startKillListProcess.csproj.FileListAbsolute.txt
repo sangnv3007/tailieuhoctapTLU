@@ -44,3 +44,10 @@ C:\Users\BEHUONG\Documents\BTL\startKillListProcess\startKillListProcess\obj\Deb
 C:\Users\BEHUONG\Documents\BTL\startKillListProcess\startKillListProcess\obj\Debug\startKillListProcess.exe.licenses
 C:\Users\BEHUONG\Documents\BTL\startKillListProcess\startKillListProcess\obj\Debug\startKillListProcess.exe
 C:\Users\BEHUONG\Documents\BTL\startKillListProcess\startKillListProcess\obj\Debug\startKillListProcess.pdb
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.csprojAssemblyReference.cache
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.Form1.resources
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.Properties.Resources.resources
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.csproj.GenerateResource.cache
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.exe.licenses
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.exe
+D:\Tài liệu học tập\tailieuhoctapTLU\Năm 3\Hệ điều hành\start-kill-list-process-master\startKillListProcess\obj\Debug\startKillListProcess.pdb

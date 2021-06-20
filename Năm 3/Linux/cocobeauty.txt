@@ -1,0 +1,22 @@
+Site address
+http://34.75.209.27/ 
+Admin URL
+http://34.75.209.27/wp-admin 
+WordPress MySQL user
+wordpress
+WordPress MySQL password (Temporary)
+jEUZh7mY
+MySQL root user
+root
+MySQL root password (Temporary)
+uoCNJsR2gSc1Bo
+WordPress Admin user
+sanghjp12345s2@gmail.com
+WordPress Admin password (Temporary)
+Deathlove@3007
+Instance
+cocobeauty-vm
+Instance zone
+us-east1-b
+Typical machine instance
+e2-small
