@@ -1,0 +1,22 @@
+Site address
+http://34.75.190.243/ 
+Admin URL
+http://34.75.190.243/wp-admin 
+WordPress MySQL user
+wordpress
+WordPress MySQL password (Temporary)
+aNC1BsvY
+MySQL root user
+root
+MySQL root password (Temporary)
+p936jdB3fY958C
+WordPress Admin user
+sangtlu30072000@gmail.com
+WordPress Admin password (Temporary)
+L*GVh5MZ
+Instance
+wordpress-1-vm
+Instance zone
+us-east1-b
+Typical machine instance
+e2-small

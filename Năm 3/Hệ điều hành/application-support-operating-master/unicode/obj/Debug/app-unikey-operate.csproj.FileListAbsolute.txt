@@ -1,9 +1,0 @@
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\obj\Debug\app-unikey-operate.csprojResolveAssemblyReference.cache
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\obj\Debug\GoTV_TLU.exe
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\obj\Debug\GoTV_TLU.pdb
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\bin\Debug\GoTV_TLU.exe.config
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\bin\Debug\GoTV_TLU.exe
-D:\Hệ điều hành\GoTiengViet_CSharp\GoTV_TLU\GoTV_TLU\bin\Debug\GoTV_TLU.pdb
-D:\Hệ điều hành\application-support-operating\unicode\bin\Debug\GoTV_TLU.exe.config
-D:\Hệ điều hành\application-support-operating\unicode\obj\Debug\GoTV_TLU.exe
-D:\Hệ điều hành\application-support-operating\unicode\obj\Debug\GoTV_TLU.pdb

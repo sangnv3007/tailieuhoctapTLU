@@ -5,12 +5,13 @@ main()
  char A[512];
  union REGS b1,b2;
  struct SREGS b3;
- b1.h.ah=2;
- b1.h.al=1;
- b1.h.ch=0;
- b1.h.cl=1;
- b1.h.dh=0;
- b1.h.dl=0x80;
+ b1.h.ah=2;//Chuc nang so 2 cua ngat 13h de doc sector vao bo nho
+ b1.h.al=1;//số lượng sector muốn đọc (≤ số sector/1 track)
+ b1.h.ch=0;//cylinder
+ b1.h.cl=1;//sector
+ b1.h.dh=0;//head
+ b1.h.dl=0x80;//O dia
+ //ES:BX = Địa chỉ vùng nhớ sẽ chứa dữ liệu  
  b3.es=FP_SEG(A);
  b1.x.bx=FP_OFF(A);
  int86x(0x13,&b1, &b2, &b3);

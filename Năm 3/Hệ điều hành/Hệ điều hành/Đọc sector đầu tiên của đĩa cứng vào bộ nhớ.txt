@@ -1,0 +1,20 @@
+//Đoc sector đau tien cua đia cung 
+//Head 0 
+//Cylinder 0
+//Sector 1
+#include<iostream.h>
+main()
+{
+ char A[512];//Khai bao mang ki tu A
+ union REGS b1,b2;//Khai bao 2 bien b1,b2 kieu REGS
+ struct SREGS b3;//Khai bao bien b3 kieu SREGS
+ b1.h.ah=2;//Chuc nang so 2 cua ngat 13h
+ b1.h.al=1;//So luong sector muon doc
+ b1.h.ch=0;//Cylinder
+ b1.h.cl=1;//Sector
+ b1.h.dh=0;//Head
+ b1.h.dl=0x80;//O dia
+ b3.es=FP_SEG(A);//Gan dia chi es = dia chi segment cua A
+ b1.x.bx=FP_OFF(A);//Gan dia chi bx = dia chi offset cua A
+ int86x(0x13,&b1, &b2, &b3);//Goi ngat 13h
+}

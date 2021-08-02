@@ -1,6 +1,0 @@
-// lpszCommand:Chuỗi lệnh để chạy bản nhạc - String
-- lpszReturnString:Chuỗi ghi nhận thông tin - String
-- cchReturn:Số kí tự của chuỗi nhận thông tin - 
-- hwndCallback: Xử lý đến một cửa sổ gọi lại nếu cờ "thông báo" được chỉ định trong chuỗi lệnh.
- alias: Chỉ ra tên hàm trong thư viện sử dụng
-VD:" A"- ascii hoặc " W"- sử dụng unicode

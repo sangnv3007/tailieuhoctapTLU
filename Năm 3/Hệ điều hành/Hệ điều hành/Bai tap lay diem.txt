@@ -22,10 +22,10 @@ for(int i=0; i<5;i++)
 	s[vt+1]=0x24;
 	vt=vt+2;
 	}
-getch(); // DUng chuong trinh de xem ket qua
+getch(); // Dung chuong trinh de xem ket qua
 union REGS b1,b2;
 b1.h.ah=5;
 b1.h.al=3;
 int86(0x10,&b1,&b2);
-getch
+getch();
 }

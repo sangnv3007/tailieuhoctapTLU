@@ -1,21 +1,21 @@
-#nclude<dos.h>
+#include<dos.h>
 #include<iostream.h>
 main()
 {
- char A[512];
+ char A[512];//su dung mang A[512] luu đưoc 1 sector
  union REGS b1,b2;
  struct SREGS b3;
- b1.h.ah=2;
- b1.h.al=1;
- b1.h.ch=0;
- b1.h.cl=1;
- b1.h.dh=0;
- b1.h.dl=0x80;
- b3.es=FP_SEG(A);
- b1.x.bx=FP_OFF(A);
- int86x(0x13,&b1, &b2, &b3);
+ b1.h.ah=2;//su dung chuc nang so 2 cua ngat 13h
+ b1.h.al=1;//sl sector muon doc
+ b1.h.ch=0;//cylinder(track)
+ b1.h.cl=1;//sector
+ b1.h.dh=0;//head
+ b1.h.dl=0x80;//O dia
+ b3.es=FP_SEG(A);//gan dia chi es= dia chi segment cua mang A
+ b1.x.bx=FP_OFF(A);// gan dia chi bx = dia chi offset cua mang A
+ int86x(0x13,&b1, &b2, &b3);//Goi ngat 13h
  cout<<"Vi tri bat dau cua phan khu 1 la:" <<"\n";
- cout<<"So hieu head = " <<(int)A[447]<<"\n";
- cout<<"So hieu sector = " <<(int)A[448]<<"\n";
- cout<<"So hieu cylinder = " <<(int)A[449]<<"\n";
+ cout<<"So hieu head = " <<(int)A[0x1BE+1]<<"\n";
+ cout<<"So hieu sector = " <<(int)A[0x1BE+2]<<"\n";
+ cout<<"So hieu cylinder = " <<(int)A[0x1BE+3]<<"\n";
 }

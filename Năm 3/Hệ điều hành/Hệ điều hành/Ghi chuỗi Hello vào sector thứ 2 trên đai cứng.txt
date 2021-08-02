@@ -1,0 +1,21 @@
+//Ghi chuoi "Hello" vao sector thu 2 tren dia cung 
+//Head 0 
+//Cylinder 0
+//Sector 2
+#include<iostream.h>
+main()
+{
+ char A[512];//Khai bao mang ki tu A kich thuoc 512 byte
+ union REGS b1,b2;//Khai bao 2 bien b1,b2 kieu REGS
+ struct SREGS b3;//Khai bao bien b3 kieu SREGS
+ b1.h.ah=3;//Chuc nang so 3 cua ngat 13h de ghi du lieu tu bo nho vao sector
+ b1.h.al=1;//So luong sector muon doc
+ b1.h.ch=0;//Cylinder
+ b1.h.cl=2;//Sector
+ b1.h.dh=0;//Head
+ b1.h.dl=0x80;//O dia
+ //ES:BX = Địa chỉ vùng nhớ sẽ chứa dữ liệu  
+ b3.es=FP_SEG(A);//Gan dia chi es = dia chi segment cua mang A
+ b1.x.bx=FP_OFF(A);//Gan dia chi bx = dia chi offset cua mang A
+ int86x(0x13,&b1, &b2, &b3);//Goi ngat 13h
+}

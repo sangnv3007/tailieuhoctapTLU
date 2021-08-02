@@ -1,8 +1,0 @@
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/bin/Debug/GoTV_TLU.exe.config
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/bin/Debug/GoTV_TLU.exe.mdb
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/bin/Debug/GoTV_TLU.pdb
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/bin/Debug/GoTV_TLU.exe
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/obj/Debug/GoTV_TLU.exe
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/obj/Debug/GoTV_TLU.exe.mdb
-/media/luongchung/DATA/GoTV_TLU/GoTV_TLU/obj/Debug/GoTV_TLU.pdb

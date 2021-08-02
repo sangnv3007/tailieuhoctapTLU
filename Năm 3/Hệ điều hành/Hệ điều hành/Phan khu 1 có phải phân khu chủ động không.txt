@@ -5,15 +5,16 @@ main()
  char A[512];
  union REGS b1,b2;
  struct SREGS b3;
- b1.h.ah=2;
- b1.h.al=1;
- b1.h.ch=0;
- b1.h.cl=1;
- b1.h.dh=0;
- b1.h.dl=0x80;
- b3.es=FP_SEG(A);
- b1.x.bx=FP_OFF(A);
- int86x(0x13,&b1, &b2, &b3);
- if(A[0x1BE]==0x80) cout<<"Phan khu 1 la chu dong"
- else cout<<"Khong phai la phan khu chu dong"
+ b1.h.ah=2;//Chuc nang so 2 cua ngat 13h de doc du lieu tren sector
+ b1.h.al=1;//So luong sector muon doc
+ b1.h.ch=0;//Cylinder
+ b1.h.cl=1;//Sector
+ b1.h.dh=0;//Head
+ b1.h.dl=0x80;//O dia
+ //ES:BX = Địa chỉ vùng nhớ sẽ chứa dữ liệu  
+ b3.es=FP_SEG(A);//Gan dia chi es = dia chi segment cua A
+ b1.x.bx=FP_OFF(A);//Gan dia chi bx = dia chi offset cua A
+ int86x(0x13,&b1, &b2, &b3);//Goi ngat 13h
+ if(A[0x1BE]==0x80) cout<<"Phan khu 1 la chu dong";
+ else cout<<"Khong phai la phan khu chu dong";
 }

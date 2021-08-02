@@ -1,0 +1,142 @@
+				CÂU HỎI LÝ THUYẾT
+
+CÂU 1:Nêu vắn tăt các các kỹ thuật cấp phát bộ nhớ ?
+1. Kỹ thuật phân vùng cố định
+- Bộ nhớ được chia thành n phần (Không nhất thiết phải bằng nhau) 
+- Có thể nạp và chạy 1 hoặc nhiều chương trình
++ Ưu điểm: Chi phí thấp, đơn giản và tốc độ nhanh
++ Nhược điểm: Thiếu mềm dẻo, không thể chạy được các chương trình có kích thước lớn hơn bộ 
+nhớ vật lý và xảy ra hiện tượng phân mảnh.
+2. Kỹ thuật phân vùng động
+- Bộ nhớ được phân phối theo kích thước chương trình, chương trình chạy xong sẽ giải phóng
+bộ nhớ cho chương trình khác
++ Ưu điểm: Mềm dẻo hơn, chạy được ctr có kích thước lớn hơn
++ Nhược điểm: Sau 1 thời gian chạy, bộ nhớ bị phân mảnh gây ra lãng phí bộ nhớ và không
+chạy được chương trình có kích thước lớn bộ nhớ vật lý
+3. Kỹ thuật phân đoạn
+- Mỗi ctr chia thành nhiều modul. Cần chạy modul nào thì nạp modul đó vào RAM.
+- Cấp cho ctr 1 đoạn nhớ có kích thước bằng kích thước modul và khi dùng xong thì giải
+phóng khỏi bộ nhớ để nạp modul khác.
+- Để quản lý các đoạn nhớ người ta sd bảng SCB
+	Trường D(0 hoặc 1) ): 0 là chưa được nạp vào bộ nhớ và 1 là ngược lại
+	Trường A: Địa chỉ modul khi nó được nạp vào RAM
+	Trường L: Kích thước modul
++ Ưu điểm: 
++ Nhược điểm: Quản lý modul phức tạp, 
+4. Kỹ thuật phân trang
+- Ctr ở bộ nhớ ngoài được chia thành nhiều phần bằng nhau mỗi phần là 1 trang(logic).
+- Bộ nhớ vật lý cũng được chia thành các trang có cùng kích thước với trang ở bộ nhớ ngoài.
+- Để quản lý  dùng bảng PCB - mỗi phần tử tương ứng với 1 trang
+	Trường D(0 hoặc 1) ): 0 là chưa được nạp vào bộ nhớ và 1 là ngược lại
+	Trường Ap: Số hiệu trang vật lý
++ Ưu điểm: 
++ Nhược điểm: Phức tạp trong quản lý, chi phí lớn(dữ liệu, ngăn xếp, mã lệnh bị lẫn lộn)
+5. Kỹ thuật kết hợp phân đoạn phân trang
+- Ctr được biên tập theo kiểu  phân đoạn, các đoạn được quản lý bằng bảng SCB
+- Mỗi đoạn lại được chia thành từng trang, mỗi đoạn sẽ có bảng PCB riêng của nó
++ Ưu điểm: Cho phép chạy ctr có kích thước > RAM, không gây phân mảnh, tách biệt mã lệnh,
+dữ liệu, ngăn xếp
++ Nhược điểm: Ctr bị chậm
+
+CÂU 1.1: Sự khác nhau chính giữa kỹ thuật phân đoạn và phân trang? 
+- Phân trang có kích thước khối cố định trong khi phân đoạn có kích thước thay đổi.
+- Trong Phân trang, phần cứng quyết định kích thước trang trong khi kích thước phân đoạn 
+được chỉ định bởi người dùng.
+- Kỹ thuật phân trang nhanh hơn để truy cập bộ nhớ so voi phân đoạn.
+- Trong phân trang, người dùng chỉ cung cấp một số nguyên duy nhất làm địa chỉ trong khi 
+phân đoạn có nhiều không gian địa chỉ độc lập.
+- PCB lưu trữ dữ liệu trang trong khi bảng SCB lưu trữ dữ liệu phân đoạn.
+* Cả phân trang và phân đoạn đều là các lược đồ để quản lý bộ nhớ.
+
+CÂU 2: Nêu định nghĩa bế tắc va các điều kiện để xảy ra bế tắc ?
+- Khái niệm: Một tập hợp các tiến trình bị coi là bế tắc nếu mỗi tiến trình trong tập hợp 
+phải chờ một sự kiện, mà sự kiện đó lại chỉ có thể do một tiến trình khác trong tập hợp 
+tạo ra.
+- Có 4 điều kiện xảy ra bế tắc:
++ Mỗi tài nguyên hoặc được sở hữu bởi một tiến trình duy nhất, hoặc đang rảnh rỗi. (1 tài 
+nguyên chỉ phục vụ 1 tiến trình)
++ Các tiến trình đang nắm giữ tài nguyên được cấp trước đó có thể gửi yêu cầu đòi cấp tài 
+nguyên mới
++ Không thể lấy lại các tài nguyên đã được cấp trước đó cho tiến trình. Chúng phải được 
+chính tiến trình đó giải phóng
++ Phải có một hàng đợi vòng tròn gồm hai hoặc nhiều tiến trình, mỗi tiến trình lại đang chờ 
+một tài nguyên được sở hữu bởi chính thành viên tiếp theo trong hàng đợi 
+
+CÂU 3: Nêu k/n tiến trình, luồng. Sự giống và khác nhau giữa tiến trình và luồng?
+- Tiến trình: Là 1 thực thể chủ động của ctr, có thời gian sống nhất định,có nhiều trậng 
+thái và có thể di chuyển từ trạng thái này sang trạng thái khác.
+- Luồng: Là 1 dòng điều khiển trong 1 tiến trình. Nếu tiến trình có nhiều luồng, nó có thể
+thực hiện nhiều tác vụ cùng 1 thòi điểm.
++ Giống nhau: Cùng nói về việc xử lý dữ liệu và chúng có mối liên hệ chặt chẽ với nhau và
+chúng dược xử lý bở CPU.
++ Khác nhau: Các tiến trình sử dụng các không gian nhớ độc lập
+Các luồng có thể sử dụng chung không gian nhớ của ctr(biến toàn cục), và có thể có vùng nhớ
+riêng của nó(biến cục bộ).
+
+CÂU 4: Nêu ưu nhược điểm của Hệ điều hành Window 9x.
+- Ưu điểm:
++ Người dùng có kỹ năng có thể hoàn thành một số tác vụ tẻ nhạt bằng cách tạo tệp hàng 
+loạt BAT hoặc CMD.
++ Tốc độ nhanh, an toàn và rẻ.
+- Nhược điểm: 
++ Các chức năng ứng dụng chưa phong phú, thao tác dòng lệnh chưa trực quan, hỗ trợ cho thiết
+bị tương đối ít.
++ Hầu hết các chương trình của nhiều thiết bị không thể được thực thi trong môi trường DOS.
+
+CÂU 5: Thư mục là gì?
+Thư mục = ∑ các khoản mục ~ files|Khoản mục chứa các thông tin về file: tên, kích thước, 
+thuộc tính, đuôi file,Cluster đầu tiên….Coi thư mục như 1 bảng, mỗi dòng là khoản mục ứng 
+với 1 file
+
+CÂU 6: Thiết bị ngoại vi kết nối với máy tính bằng cách nào?
+Các thiết bị vào/ra được kết nối với hệ thống thông qua các bộ điều khiển thiết bị (controllers)
+
+CÂU 7: Thế nào là địa chỉ lô gic và địa chỉ vật lý ?
+- Địa chỉ logic: 
+♣ Gán cho các lệnh và dữ liệu không phụ thuộc vào vị trí cụ thể tiến trình trong bộ nhớ 
+♣ Chương trình ứng dụng chỉ nhìn thấy và làm việc với địa chỉ logic này 
+♣ Là địa chỉ tương đối tức là mỗi phần tử của chương trình được gán một địa chỉ tương đối 
+đối với một vị trí nào đó
+- Địa chỉ vật lý: 
+♣ Là địa chỉ chính xác trong bộ nhớ máy tính 
+♣ Các mạch nhớ sử dụng để truy nhập tới chương trình và dữ liệu Địa chỉ logic được chuyển 
+thành địa chỉ vật lý nhờ khối ánh xạ địa chỉ
+
+CÂU 8: Việc định nghĩa và sử dụng khái niệm file đem lại những ưu điểm gì ? Khi đặt tên cho
+file cần quan tâm tới những quy định gì ?
+Ưu điểm: 
+♣ Các thao tác với file sẽ dễ dàng hơn đối với người lập trình ứng dụng 
+♣ HDH có thể kiểm soát được các thao tác với file 
+Đặt tên cho file: 
+♣ Cho phép xác định file 
+♣ Là thông tin người dùng thường sử dụng nhất khi làm việc với file 
+♣ Quy tắc đặt tên cho file của một số HDH:Độ dài tối đa ,Phân biệt chữ hoa chữ thường 
+Cho phép sử dụng dấu cách ,Các ký tự cấm...
+
+CÂU 9: Thao tác với file bằng ngắt 21h ?
+- Chức năng 3Ch: Tạo file mới
+- Chức năng 3Dh: Mở một file có sẵn
+- Chức năng 3Eh: Đóng file đang mở
+- Chức năng 3Fh: Đọc dữ liệu từ file vào bộ nhớ
+- Chức năng 40h: Ghi dữ liệu từ bộ nhớ vào file
+
+CÂU 10: Ưu, nhược điểm của phương pháp ánh xạ thanh ghi vào/ra tới bộ nhớ ?
+- Ưu điểm: 
++ Có thể thực hiện vào/ra bằng các lệnh truy nhập bộ nhớ thông thường
++ Do giảm được số lệnh thực hiện nên sẽ làm tăng tốc độ vào/ra 
++ Tránh được xung đột giữa các tiến trình khi thực hiện vào/ra mà không cần áp dụng thêm
+các giải  pháp bảo vệ khác.
+- Nhược điểm: Cần được trang bị phần cứng chuyên dụng, thiết kế phần cứng sẽ trở nên phức 
+tạp hơn
+
+CÂU 11: Phân biệt hai hiện tượng phân mảnh nội và phân mảnh ngoài, chúng xuất hiện khi nào 
+và tại sao?
+- Phân mảnh ngoại: là hiện tượng khi kích thước không gian nhớ còn trống đủ để thỏa mãn yêu
+cầu cấp phát nhưng không gian nhớ này lại không liên tục.
+VD: Khi bạn thường xuyên cấp phát vùng nhớ mới, sau đó xóa đi những phần vùng nhớ đã cấp 
+phát một cách không thứ tự.
+- Phân mảnh nội: là hiện tượng sẽ có vùng nhớ dư thừa khi ta cấp phát một vùng nhớ hơi lớn 
+hơn kích thước yêu cầu.
+Ví dụ: Cấp một khoảng trống 18,464 bytes cho một process yêu cầu 18,462 bytes
+
+CÂU 12:
