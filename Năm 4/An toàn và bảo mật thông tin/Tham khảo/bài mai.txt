@@ -1,0 +1,13 @@
+#include<iostream>
+#include<string>
+Using namespace  std;
+innt main()
+{
+	string s;
+	cout<<"Nhập chuỗi: ";
+	getline(cin,s);
+	for(int i=0,i<s.size();i++);
+	{
+		s[i]=s[i]+3;}
+	cout<<"Chuỗi mã hóa là: "<<s;
+}
